@@ -1,0 +1,93 @@
+.benefits-section {
+  background: #ffffff;
+  width: 100%;
+  /* тонкі лінії, що відділяють секцію від сусідніх на макеті */
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.benefits-section .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* на великих екранах — 64px, на вузьких — плавно звужується до 24px */
+  padding: 64px clamp(24px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.benefits-title {
+  width: 870px;
+  max-width: 100%;
+  opacity: 1;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 64px;
+}
+
+.puncts {
+  /* фіксована ширина як у макеті — картка не стискається менше цього,
+     тому текст стабільно лягає у 3 рядки */
+  flex: 1 1 416px;
+  max-width: 416px;
+  background: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 32px 12px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.puncts p {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.puncts h3 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .puncts {
+    flex: 1 1 100%;
+    max-width: 480px;
+  }
+
+  .benefits-list {
+    gap: 32px;
+  }
+
+  .benefits-title {
+    font-size: 28px;
+  }
+}
