@@ -1,7 +1,6 @@
 .benefits-section {
-  background: #ffffff;
   width: 100%;
-  /* тонкі лінії, що відділяють секцію від сусідніх на макеті */
+  background-color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -9,8 +8,7 @@
 .benefits-section .container {
   max-width: 1440px;
   margin: 0 auto;
-  /* на великих екранах — 64px, на вузьких — плавно звужується до 24px */
-  padding: 64px clamp(24px, 5vw, 64px);
+  padding: 64px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,76 +16,105 @@
 }
 
 .benefits-title {
-  width: 870px;
-  max-width: 100%;
-  opacity: 1;
+  max-width: 870px;
+  margin: 0;
   font-family: 'Sora', sans-serif;
   font-weight: 400;
   font-size: 40px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   text-align: center;
-  color: #000000;
-  margin: 0;
+  color: #000;
 }
 
 .benefits-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
+  display: flex;
   justify-content: center;
   gap: 64px;
+  list-style: none;
 }
 
 .puncts {
-  /* фіксована ширина як у макеті — картка не стискається менше цього,
-     тому текст стабільно лягає у 3 рядки */
-  flex: 1 1 416px;
+  flex: 1 1 0;
   max-width: 416px;
-  background: #f2f2f2;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 32px 12px;
-  gap: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
+  background-color: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.puncts p {
-  font-family: 'Mulish', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
-  margin: 0;
-  letter-spacing: 0;
-}
-
 .puncts h3 {
+  margin: 0;
   font-family: 'Sora', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: -0.01em;
-  color: #000000;
-  margin: 0;
+  color: #000;
 }
 
-@media (max-width: 900px) {
-  .puncts {
-    flex: 1 1 100%;
-    max-width: 480px;
+.puncts p {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits-section .container {
+    padding: 56px 32px;
+  }
+
+  .benefits-title {
+    font-size: 32px;
   }
 
   .benefits-list {
     gap: 32px;
   }
 
+  .puncts {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-section .container {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+
   .benefits-title {
     font-size: 28px;
+  }
+
+  .benefits-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .puncts {
+    width: 100%;
+    max-width: 480px;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .puncts h3 {
+    font-size: 20px;
+  }
+
+  .puncts p {
+    font-size: 16px;
   }
 }
