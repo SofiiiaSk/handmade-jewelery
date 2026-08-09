@@ -9,9 +9,9 @@
 .media-list {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
-  gap: 12px;
+  gap: 18px;
   margin-bottom: 64px;
 }
 .nav-list {
@@ -40,6 +40,8 @@
 .media-item {
   fill: #000000;
   flex-shrink: 0;
+  width: 32px;
+  height: 32px;
 }
 .icon-Company-Logo {
   fill: #000000;
@@ -76,6 +78,19 @@
 
     /* line-height: 24px; */
     line-height: 1.5;
+  }
+  .media-item {
+    fill: #000000;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+  .media-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -114,5 +129,18 @@
   .icon-Company-Logo {
     width: 84px;
     height: 36px;
+  }
+  .media-item {
+    fill: #000000;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+  .media-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
   }
 }
