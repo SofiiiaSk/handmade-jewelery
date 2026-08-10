@@ -11,8 +11,9 @@
   font-family: 'Mulish';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/mulish-v17-latin-regular.woff2') format('woff2');
+  src: url('../fonts/mulish-v18-latin-regular.woff2') format('woff2');
 }
+
 :root {
   font-family:
     'Mulish',
