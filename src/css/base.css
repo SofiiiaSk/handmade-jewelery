@@ -35,3 +35,8 @@ h3,
 .heading {
   font-family: 'Sora', sans-serif;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
+
