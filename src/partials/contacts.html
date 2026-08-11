@@ -1,78 +1,106 @@
 <section class="contacts">
-    <div class="container">
-        <div class="container-wrapper">
-            <div class="contacts-content">
-                <span class="contacts-label">Connect</span>
-                <div class="contacts-title-description">
-                    <h2 class="contacts-title">Order your unique jewelry</h2>
-                    <p class="contacts-description">We'd love to hear more details from you!</p>
-                </div>
-            </div>
-            
-            <div class="contacts-block">
-                <address class="contacts-address">
-                    <ul class="contacts-list">
-                        <li class="contacts-item">
-                            <svg class="contacts-icons" width="27" height="22">
-                                <use href="./img/contacts/icons.svg#list"></use>
-                            </svg>
-                            <div class="contacts-info">
-                                <p class="contacts-address-label">Email</p>
-                                <a class="contacts-link" href="mailto:info@handmadejewelry.com">info@handmadejewelry.com</a>
-                            </div>
-                        </li>
-            
-                        <li class="contacts-item">
-                            <svg class="contacts-icons" width="26" height="26">
-                                <use href="./img/contacts/icons.svg#phone"></use>
-                            </svg>
-                            <div class="contacts-info">
-                                <p class="contacts-address-label">Phone</p>
-                                <a class="contacts-link" href="tel:+15550000000">+1 (555) 000-0000</a>
-                            </div>
-                        </li>
-            
-                        <li class="contacts-item">
-                            <svg class="contacts-icons" width="22" height="27">
-                                <use href="./img/contacts/icons.svg#local"></use>
-                            </svg>
-                            <div class="contacts-info">
-                                <p class="contacts-address-label">Office</p>
-                                <a class="contacts-link" href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    76-8 Oakington Manor Dr, London, UK
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </address>
-            
-                <form class="contacts-forma">
-                    <label class="contacts-field">
-                        Name*
-                        <input class="contacts-form-input" name="input-name" id="input-name" type="text" placeholder="Tony"
-                           pattern="^[a-zA-Z\s\.]{5,28}$" required>
-                        <span class="contacts-error">Error Text</span>
-                    </label>
-            
-                    <label class="contacts-field">
-                        Phone*
-                        <input class="contacts-form-input" name="input-phone" id="input-phone" type="tel"
-                            placeholder="+1 234 123 23" pattern="^\+[0-9\s]{14}$" required>
-                        <span class="contacts-error">Error Text</span>
-                    </label>
-            
-                    <label class="contacts-field">
-                        Describe what you want
-                        <textarea class="contacts-area-input" name="comment" id="comment" maxlength="500" rows="5"
-                            placeholder="Type your message..."></textarea>
-                    </label>
-            
-                    <button class="contacts-btn" type="submit">Submit</button>
-                </form>
-            </div>
+  <div class="container">
+    <div class="container-wrapper">
+      <div class="contacts-content">
+        <span class="contacts-label">Connect</span>
+        <div class="contacts-title-description">
+          <h2 class="contacts-title">Order your unique jewelry</h2>
+          <p class="contacts-description">
+            We'd love to hear more details from you!
+          </p>
         </div>
-       
+      </div>
+
+      <div class="contacts-block">
+        <address class="contacts-address">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <svg class="contacts-icons" width="27" height="22">
+                <use href="./img/contacts/icons.svg#list"></use>
+              </svg>
+              <div class="contacts-info">
+                <p class="contacts-address-label">Email</p>
+                <a class="contacts-link" href="mailto:info@handmadejewelry.com"
+                  >info@handmadejewelry.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contacts-item">
+              <svg class="contacts-icons" width="26" height="26">
+                <use href="./img/contacts/icons.svg#phone"></use>
+              </svg>
+              <div class="contacts-info">
+                <p class="contacts-address-label">Phone</p>
+                <a class="contacts-link" href="tel:+15550000000"
+                  >+1 (555) 000-0000</a
+                >
+              </div>
+            </li>
+
+            <li class="contacts-item">
+              <svg class="contacts-icons" width="22" height="27">
+                <use href="./img/contacts/icons.svg#local"></use>
+              </svg>
+              <div class="contacts-info">
+                <p class="contacts-address-label">Office</p>
+                <a
+                  class="contacts-link"
+                  href="https://maps.google.com/?q=76-8+Oakington+Manor+Dr,+London,+UK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  76-8 Oakington Manor Dr, London, UK
+                </a>
+              </div>
+            </li>
+          </ul>
+        </address>
+
+        <form class="contacts-forma">
+          <label class="contacts-field">
+            Name*
+            <input
+              class="contacts-form-input"
+              name="input-name"
+              id="input-name"
+              type="text"
+              placeholder="Tony"
+              pattern="^[a-zA-Z\s\.]{5,28}$"
+              required
+            />
+            <span class="contacts-error">Error Text</span>
+          </label>
+
+          <label class="contacts-field">
+            Phone*
+            <input
+              class="contacts-form-input"
+              name="input-phone"
+              id="input-phone"
+              type="tel"
+              placeholder="+1 234 123 23"
+              pattern="^\+[0-9\s]{14}$"
+              required
+            />
+            <span class="contacts-error">Error Text</span>
+          </label>
+
+          <label class="contacts-field">
+            Describe what you want
+            <textarea
+              class="contacts-area-input"
+              name="comment"
+              id="comment"
+              maxlength="500"
+              rows="5"
+              placeholder="Type your message..."
+            ></textarea>
+          </label>
+
+          <button class="contacts-btn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
