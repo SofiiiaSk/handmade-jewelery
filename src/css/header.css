@@ -11,7 +11,20 @@
 }
 
 .header-logo { display: inline-flex; }
-.header-logo img { width: 84px; height: 36px; }
+
+/* The image logo is for tablet and desktop. */
+.header-logo-content {
+  display: none;
+  width: 84px;
+  height: 36px;
+}
+
+/* Mobile header and its navigation overlay use a logo from the SVG sprite. */
+.header-logo-symbol {
+  display: block;
+  width: 168px;
+  height: 68px;
+}
 .header-nav, .header-order-link { display: none; }
 
 .header-menu-button {
@@ -99,6 +112,8 @@
 
 @media screen and (min-width: 768px) {
   .header-container { min-height: 72px; padding: 0 32px; }
+  .header-logo-content { display: block; }
+  .header-container > .header-logo .header-logo-symbol { display: none; }
   .mobile-menu-container { width: 448px; margin: 0 auto; padding: 18px 32px 48px; }
   .mobile-menu-order-link { height: 40px; }
 }
