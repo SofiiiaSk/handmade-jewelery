@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    width: 100%;
+    padding: 64px 20px;
+}
+
+.container-gallery-wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gallery-section-title {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    text-align: center;
+}
+
+.gallery-description {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.16px;
+    text-align: center;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-column {
+    list-style: none;
+    width: 100%;
+}
+
+.gallery-column-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 335px) and (max-width: 767px) {
+    .gallery {
+        width: 100%;
+        padding: 64px 20px;
+    }
+
+    .container-gallery-wrapper {
+        width: 100%;
+    }
+
+    .gallery-list {
+        width: 100%;
+    }
+
+    .gallery-item {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .gallery-column-list {
+        gap: 8px;
+    }
+}
+
+@media screen and (min-width: 1158px) {}
