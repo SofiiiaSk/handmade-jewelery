@@ -82,7 +82,7 @@
   .benefits-list {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 32 px;
   }
 
   .puncts {
@@ -103,7 +103,7 @@
   }
 
   .benefits-list {
-    gap: 24px;
+    gap: 32px;
   }
 
   .puncts {
