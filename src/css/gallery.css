@@ -29,7 +29,6 @@ ol {
 
 .container-gallery-wrapper {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,7 +69,7 @@ ol {
 
 .gallery-column {
     list-style: none;
-    width: 100%;
+    width: 335px;
 }
 
 .gallery-column-list {
@@ -92,43 +91,39 @@ ol {
     height: auto;
 }
 
-@media screen and (min-width: 335px) and (max-width: 767px) {
-    .gallery {
-        width: 100%;
-        padding: 64px 20px;
-    }
-
-    .container-gallery-wrapper {
-        width: 100%;
-    }
-
-    .gallery-list {
-        width: 100%;
-    }
-
-    .gallery-item {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-    }
-
-    .gallery-item img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
 
 @media screen and (min-width: 768px) {
+    .container-gallery-wrapper {
+        margin: 0 auto;
+        justify-content: center;
+        gap: 0;
+    }
+
     .gallery-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        flex-direction: row;
+        justify-content: center;
+        padding: 80px 32px 64px 32px;
+    }
+
+    .gallery-column {
+        width: 340px;
     }
 
     .gallery-column-list {
-        gap: 8px;
+        gap: 24px;
     }
 }
 
-@media screen and (min-width: 1158px) {}
+@media screen and (min-width: 1440px) {
+    .container-gallery-wrapper {
+        max-width: 1440px;
+    }
+
+    .gallery-column {
+        width: 640px;
+    }
+
+    .gallery-column-list {
+        gap: 32px;
+    }
+}
