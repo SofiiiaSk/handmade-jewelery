@@ -1,19 +1,4 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Sora:wght@400&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="../css/gallery.css" />
-</head>
-
-<section class="gallery" id="gallery">
+<section class="gallery">
   <div class="container-gallery-wrapper">
     <div class="gallery-section-title">
       <h2 class="gallery-title">Jewelry Showcase</h2>
@@ -22,30 +7,39 @@
         Discover the beauty of our handcrafted jewelry in style.
       </p>
     </div>
-
     <ul class="gallery-list">
-      <li class="gallery-column">
-        <ul class="gallery-column-list">
-          <li class="gallery-item">
-            <img src="/src/img/gallery/bracelet.jpg" alt="Bracelet" />
-          </li>
-
-          <li class="gallery-item">
-            <img src="/src/img/gallery/pendant.jpg" alt="Pendant" />
-          </li>
-        </ul>
+      <li class="gallery-item">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/webp/gallery/desktop/bracelet.webp" />
+          <source media="(min-width: 768px)" srcset="./img/webp/gallery/tablet/bracelet.webp" />
+          <img src="./img/webp/gallery/mobile/bracelet.webp" srcset="./img/webp/gallery/mobile/bracelet.webp"
+            width="320" alt="Bracelet" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/webp/gallery/desktop/earrings.webp" />
+          <source media="(min-width: 768px)" srcset="./img/webp/gallery/tablet/earrings.webp" />
+          <img src="./img/webp/gallery/mobile/earrings.webp" srcset="./img/webp/gallery/mobile/earrings.webp"
+            width="320" alt="earrings" />
+        </picture>
       </li>
 
-      <li class="gallery-column">
-        <ul class="gallery-column-list">
-          <li class="gallery-item">
-            <img src="/src/img/gallery/beads.jpg" alt="Beads" />
-          </li>
-
-          <li class="gallery-item">
-            <img src="/src/img/gallery/earrings.jpg" alt="Earrings" />
-          </li>
-        </ul>
+      <li class="gallery-item">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/webp/gallery/desktop/beads.webp" />
+          <source media="(min-width: 768px)" srcset="./img/webp/gallery/tablet/beads.webp" />
+          <img src="./img/webp/gallery/mobile/beads.webp" srcset="./img/webp/gallery/mobile/beads.webp" width="320"
+            alt="Beads" />
+        </picture>
+      </li>
+      <li class="gallery-item">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/webp/gallery/desktop/pendant.webp" />
+          <source media="(min-width: 768px)" srcset="./img/webp/gallery/tablet/pendant.webp" />
+          <img src="./img/webp/gallery/mobile/pendant.webp" srcset="./img/webp/gallery/mobile/pendant.webp" width="320"
+            alt="pendant" />
+        </picture>
       </li>
     </ul>
   </div>
