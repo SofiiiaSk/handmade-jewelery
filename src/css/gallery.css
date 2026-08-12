@@ -70,6 +70,7 @@ ol {
 .gallery-column {
     list-style: none;
     width: 335px;
+    max-width: 100%;
 }
 
 .gallery-column-list {
